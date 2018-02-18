@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding >
+  
+  
+      <ion-list transparent>
+        <div class="login" style="margin: 0 auto; width:center; height:center;">
+          <div id="user">
+            <ion-item>
+              <ion-input type="text" [(ngModel)]="usuarioo" placeholder="Username"></ion-input>
+            </ion-item>
+          </div>
+  
+          <div id="pass">
+            <ion-item>
+              <ion-input type="password" [(ngModel)]="senhaaaa" placeholder="Password"></ion-input>
+            </ion-item>
+          </div>
+  
+        </div>
+      </ion-list>
+  
+  
+  
+      <div  style="margin: 0 auto; width:100px">
+        <button class="button" (click)="logar()" ion-button color="dark" round>Sing In</button>
+      </div>
+  
+      <div id="entrar" style="margin: 0 auto; width:160px">
+        <button class="button" (click)="limparCampos()" ion-button color="dark" round>Limpar campos</button>
+      </div>
+    
+  
+  </ion-content>
+  

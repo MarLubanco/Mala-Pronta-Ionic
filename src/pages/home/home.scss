@@ -1,0 +1,13 @@
+page-home {
+
+}
+
+
+ion-content{
+    background-image: url(../assets/imgs/bag.png);
+    background-size: 1000px;
+}
+
+ion-list{
+    background: transparentize($color: #000000, $amount: 0.5);
+}

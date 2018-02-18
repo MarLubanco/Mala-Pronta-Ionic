@@ -1,0 +1,17 @@
+page-mochila {
+
+
+
+.card{
+    position: static;
+    top: 86%;
+    font-size: 2.0em;
+    width: 100%;
+    height: center;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    border-radius: 25px 25px 25px 25px;
+    background: transparentize($color: #000000, $amount: 0.5);
+}
+
+}

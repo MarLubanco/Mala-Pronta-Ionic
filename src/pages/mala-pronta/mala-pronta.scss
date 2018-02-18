@@ -1,0 +1,27 @@
+page-mala-pronta {
+
+    ion-content{
+        background-image: url(../assets/imgs/mala.png);
+    }
+
+    ion-list{
+        color: rgb(255, 255, 255);
+        border-radius: 10px 10px 10px 10px;
+    
+    }
+
+    ion-icon{
+        font-size: 70px;
+    }
+
+    h1{
+        color: rgb(255, 255, 255);
+        text-align: center;
+    }
+ 
+    .titulo{
+        color: rgb(255, 255, 255);
+        position: center;
+    }
+
+}
