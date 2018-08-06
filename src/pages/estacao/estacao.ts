@@ -16,12 +16,15 @@ import { MochilaPage } from '../mochila/mochila';
   selector: 'page-estacao',
   templateUrl: 'estacao.html',
 })
-export class EstacaoPage {
+export class EstacaoPage  {
   clima: String;
   bag = MochilaPage;
+  pais : String;
 
+  
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.clima;
+    this.pais = navParams.get("paiss");
   }
 
   ionViewDidLoad() {
@@ -29,31 +32,40 @@ export class EstacaoPage {
   }
 
   public verao() {
-    this.clima ="verao";
-    console.log("Estação: " + this.clima);
-    this.navCtrl.push("MochilaPage");
+    this.clima ="Verão";
+    console.log("Estação: " + this.clima + "Pais: " + this.pais);
+    this.navCtrl.push("MochilaPage",{
+        paiss : this.pais,
+        clima : this.clima
+    });
    
   }
 
   public inverno() {
-    this.clima = "inverno";
+    this.clima = "Inverno";
     console.log("Estação: " + this.clima);
-    this.navCtrl.push("MochilaPage");
-  
+    this.navCtrl.push("MochilaPage",{
+      paiss : this.pais,
+      clima : this.clima
+  });
   }
 
   public outono() {
-    this.clima = "outono";
+    this.clima = "Outono";
     console.log("Estação: " + this.clima);
-    this.navCtrl.push("MochilaPage");
-  
+    this.navCtrl.push("MochilaPage",{
+      paiss : this.pais,
+      clima : this.clima
+  });
   }
 
   public primavera() {
-    this.clima = "primavera";
+    this.clima = "Primavera";
     console.log("Estação: " + this.clima);
-    this.navCtrl.push("MochilaPage");
-
+    this.navCtrl.push("MochilaPage",{
+      paiss : this.pais,
+      clima : this.clima
+  });
   }
 
 

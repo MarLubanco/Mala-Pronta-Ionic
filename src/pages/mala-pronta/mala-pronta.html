@@ -16,49 +16,65 @@
 <ion-content padding>
   <br>
   <br>
-  <div>
-    <div class="titulo">
-      <h1>MALA PRONTA</h1>
+  <div class="titulo">
+    <div class="backg">
+    <div>
+      <h1>Mochila Pronta</h1>
+      <h4> País destino: {{this.country}}</h4>
+      <h4> Estação: {{this.estacao}}</h4>
     </div>
-    <br>
+    <br><br><br>
+
+
+
+
+    
+      <div id="camiseta"   data-ng-style="{'background' : 'red' : item.selected}"   >
+       
+        <img  src="assets/imgs/shirt.png" height="80" width="80"  item-start>
+        <h2>{{ this.qtdCamisetas}}</h2>
+        <br><br>
+   
+      </div>
+   
+
+      <div id="blusa">
+       
+        <img src="assets/imgs/sweatshirt.png" height="80" width="80" item-start>
+        <h2>{{ this.qtdBlusas}}</h2>
+        <br><br>
+      </div>
+    
+
+      <div id="calca">
+     
+        <img src="assets/imgs/jeans.png" height="80" width="80" item-start>
+        <h2>{{ this.qtdCalcas}}</h2>
+        <br><br>
+      </div>
+     
+
+      <div id="bermuda">
+       
+        <img src="assets/imgs/pants.png" height="65" width="65" item-start>
+        <h2>{{ this.qtdBermudas}}</h2>
+        <br><br>
+      </div>
+     
+      <div id="tenis">
+        
+        <img src="assets/imgs/shoes.png" height="80" width="80" item-start>
+        <h2>{{ this.qtdTenis}}</h2>
+      </div>
+    </div>
+ 
+
    
   </div>
 
-  <div id="camiseta">
-   
-    <h1>{{ this.qtdCamisetas}}</h1>
-    <img src="assets/imgs/shirt.png" height="60" width="60" item-start>
-    <br>
+  <div >
+   <br>
+    <h5>Faça uma ótima viagem!</h5>
   </div>
-
-  <div id="blusa">
-    <h1>{{ this.qtdBlusas}}</h1>
-    <img src="assets/imgs/sweatshirt.png" height="60" width="60" item-start>
-    <br>
-  </div>
-
-  <div id="calca">
-    <h1>{{ this.qtdCalcas}}</h1>
-    <img src="assets/imgs/jeans.png" height="60" width="60" item-start>
-    <br>
-  </div>
-
-
-  <div id="bermuda">
-    <h1>{{ this.qtdBermudas}}</h1>
-    <img src="assets/imgs/shorts.png" height="60" width="60" item-start>
-    <br>
-  </div>
-
-  <div id="tenis">
-      <h1>{{ this.qtdTenis}}</h1>
-      <img src="assets/imgs/shoes.png" height="60" width="60" item-start>
-      <br>
-    </div>
-
-
-
-
-
-
 </ion-content>
+

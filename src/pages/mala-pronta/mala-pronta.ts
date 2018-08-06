@@ -22,14 +22,17 @@ export class MalaProntaPage {
   qtdCalcas: number;
   qtdBermudas: number;
   qtdTenis: number;
-  
+  country:String;
+  estacao: String;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+      this.country = navParams.get("paiss");
+      this.estacao = navParams.get("clima");
       this.qtdCamisetas = navParams.get("qtdCamisetas");
       this.qtdBlusas = navParams.get("qtdBlusas");
       this.qtdCalcas = navParams.get("qtdCalcas");
       this.qtdTenis = navParams.get("qtdTenis");
       this.qtdBermudas =  navParams.get("qtdBermudas");
-      console.log("Camisetas: " + this.qtdCamisetas + " Blusas: " + this.qtdBlusas + 
+      console.log("Pais: " + this.country + "Estação: " + this.estacao + " Camisetas: " + this.qtdCamisetas + " Blusas: " + this.qtdBlusas + 
       " Calças: " + this.qtdCalcas + " Tenis: " + this.qtdTenis + " Bermudas: " + this.qtdBermudas);
   }
 
@@ -42,5 +45,6 @@ export class MalaProntaPage {
       console.log("Camisetas: " + this.qtdCamisetas + " Blusas: " + this.qtdBlusas);
 
   }
+
 
 }

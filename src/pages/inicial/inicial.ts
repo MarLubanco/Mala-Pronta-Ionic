@@ -19,7 +19,7 @@ export class InicialPage {
     pais:String;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.pais;
+    this.pais
   }
 
   ionViewDidLoad() {
@@ -33,25 +33,30 @@ export class InicialPage {
   }
 
   canada(){
-  
-    this.navCtrl.push("EstacaoPage");
-    this.pais = "canada";
+    this.pais = "Canada";
+    this.navCtrl.push("EstacaoPage",{
+      paiss: this.pais
+    });
+    
     console.log("Pais: " +  this.pais)
   
   }
 
   china(){
-    
-    this.navCtrl.push("EstacaoPage");
-    this.pais = "china";
+    this.pais = "China";
+    this.navCtrl.push("EstacaoPage",{
+      paiss: this.pais
+    });
+
     console.log("Pais: " +  this.pais)
   
   }
 
   newyork(){
-    
-    this.navCtrl.push("EstacaoPage");
-    this.pais = "newyork";
+    this.pais = "New York";
+    this.navCtrl.push("EstacaoPage",{
+      paiss: this.pais
+    });
     console.log("Pais: " +  this.pais)
    
   }

@@ -14,4 +14,28 @@ page-mochila {
     background: transparentize($color: #000000, $amount: 0.5);
 }
 
+.sugestao{
+    border-radius: 25px 25px 25px 25px;
+    background: transparentize($color: #181717, $amount: 0.5);
+}
+
+.botao {
+    position: center;
+}
+
+h5{
+    margin-left: 30px;
+    color: rgb(255, 255, 255);
+   
+   
+}
+
+ul{
+    font-size: 20px;
+    margin-left: 55px;
+    color: rgb(255, 255, 255);
+    
+}
+
+
 }

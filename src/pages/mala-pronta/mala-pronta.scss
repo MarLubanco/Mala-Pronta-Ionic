@@ -10,18 +10,49 @@ page-mala-pronta {
     
     }
 
-    ion-icon{
-        font-size: 70px;
+    img{
+        margin-left: 20px;
     }
 
+    
+
     h1{
+        font-family: Courier New, Courier, monospace;
         color: rgb(255, 255, 255);
         text-align: center;
     }
- 
+
+    h4{
+        font-family: Courier New, Courier, monospace;
+        margin-left: 20px;
+    }
+
     .titulo{
         color: rgb(255, 255, 255);
         position: center;
+        
+        border: 1px solid rgb(255, 255, 255);
+        margin-left: 10px;
+        
+    }
+
+    #camiseta { float: left; width: 65%; }
+    #blusa { float: right; width: 45%; }
+    #calca {position:center;}
+   
+    h2{
+        margin-left: 55px;
+    }
+
+    #roupa{
+        background-color: green;
+        border-radius: 40px 40px 40px 40px;
+    }
+
+    h5{
+        margin-left: 55px;
+        color: rgb(255, 255, 255);
+        font-family: Courier New, Courier, monospace;
     }
 
 }
