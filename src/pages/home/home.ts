@@ -13,12 +13,9 @@ export class HomePage {
     resultado;
     inicial = InicialPage;
  
-  
-
   constructor(public navCtrl: NavController) {
     this.usuarioo;
     this.senhaaaa;
-   
   }
 
   public logar(){

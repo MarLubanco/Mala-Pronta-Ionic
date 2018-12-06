@@ -10,4 +10,5 @@ import { MochilaPage } from './mochila';
     IonicPageModule.forChild(MochilaPage),
   ],
 })
+
 export class MochilaPageModule {}
