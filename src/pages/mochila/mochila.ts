@@ -9,7 +9,7 @@ import { MalaProntaPage } from '../mala-pronta/mala-pronta';
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-
+  
 @IonicPage()
 @Component({
   selector: 'page-mochila',
@@ -24,25 +24,21 @@ export class MochilaPage {
   calcas:number;
   tenis:number;
   bermudas:number;
-  
-  
-  
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
    
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad MochilaPage');
   }
 
-  mala(){
+  mala() {
     if (this.clima=="inverno"){
-       this.inverno = "inverno";
+      this.inverno = "inverno";
     }
-   
   }
 
-  finalizarMala(){
+  finalizarMala() {
       this.navCtrl.push("MalaProntaPage",{
         qtdCamisetas: this.camisetas,
         qtdBlusas: this.blusas,
@@ -51,9 +47,5 @@ export class MochilaPage {
         qtdTenis: this.tenis
 
       });
-
   }
-
-  
-
 }
