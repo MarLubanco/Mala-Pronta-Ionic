@@ -1,8 +1,14 @@
 # Projeto Package
 
-#### Dados daaplicação
+### Start Projeto
 ```
-Frontend -  Ionic 3 - Bootstrap 3
+ > npm install
+ > ionic serve
+```
+
+#### Dados da aplicação
+```
+Frontend -  Ionic 3 - Bootstrap 3 - Angular 5
 ```         
 
 #### Aplicação para viajantes, um aplicativo para montar sua mala
